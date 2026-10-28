@@ -7,7 +7,9 @@
 /storage/*.key
 /storage/pail
 /vendor
-.env
+/.env
+/database/*.sqlite
+/database/*.sqlite-*
 .env.backup
 .env.production
 .phpactor.json
