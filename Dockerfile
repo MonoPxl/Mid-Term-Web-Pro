@@ -7,7 +7,7 @@ COPY . .
 RUN npm run build
 
 # Run Laravel with PHP-FPM + Nginx on Render.
-FROM php:8.5-fpm-alpine AS app
+FROM php:8.3-fpm-alpine AS app
 
 RUN apk add --no-cache bash curl nginx supervisor icu-libs libcurl libzip libxml2 oniguruma sqlite-libs \
     && apk add --no-cache --virtual .build-deps $PHPIZE_DEPS curl-dev libzip-dev libxml2-dev icu-dev oniguruma-dev sqlite-dev \
