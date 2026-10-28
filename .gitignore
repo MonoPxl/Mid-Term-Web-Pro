@@ -8,6 +8,8 @@
 /storage/pail
 /vendor
 .env
+# /database/*.sqlite
+# /database/*.sqlite-*
 .env.backup
 .env.production
 .phpactor.json
